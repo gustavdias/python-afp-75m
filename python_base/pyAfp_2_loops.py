@@ -1,3 +1,36 @@
+
+
+#! for loop
+for i in range(2,34,3):
+    print(i)
+
+# stop
+# start, stop
+# start, stop, step 
+
+for i in range(-10,-1,-1): # since you already passed -1, you get nothing
+    print(i)
+
+#? loop through a list
+for i in [3,4,42,3,2,4]:
+    print(i)
+
+
+
+x = [3,4,5,6,78,8]
+for i in range(len(x)):
+    print(x[i])
+
+#? enumerates creates indexes and values for the list
+for i, element in enumerate(x):
+    print(i,element)
+
+
+#42m22s
+#______________________
+
+
+
 x = [3,4,42,3,2,4]
 i = 0
 while i < 10:
@@ -253,4 +286,3 @@ print(x)
 
 raise Exception('Bad')
 
-#1h3m
