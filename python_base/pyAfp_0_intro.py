@@ -7,6 +7,11 @@ console.log(x.length)
 print(len(x))
 
 When this is done, do to python Udemy S5L39
+
+
+
+#! List Comprehension
+
 '''
 #______________________
 

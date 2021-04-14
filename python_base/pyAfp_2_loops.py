@@ -75,7 +75,7 @@ print(reversed_string)
 
 #! Sets - if you care if something exists or not (you don care about the postion or frequency)
 # faster than list
-# unique unordered colection of elements
+# unique unordered collections of elements
 x = [2,34,435,54,3,657,6,77,2]
 
 y = set() #to create a empty set
@@ -119,7 +119,41 @@ for key in x:
     print(key, x[key])
 
 
-#! Comprehensions
+#! List Comprehension
+#? List comprehensions allow us to build out lists using a different notation. You can think of it as essentially a one line for loop built inside of brackets.
+# Grab every letter in string
+lst = [x for x in 'word']
+#['w', 'o', 'r', 'd']
+
+# Square numbers in range and turn into list
+lst = [x**2 for x in range(0,11)]
+#[0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# Check for even numbers in a range
+lst = [x for x in range(11) if x % 2 == 0]
+#[0, 2, 4, 6, 8, 10]
+
+# Convert Celsius to Fahrenheit
+celsius = [0,10,20.1,34.5]
+
+fahrenheit = [((9/5)*temp + 32) for temp in celsius ]
+
+fahrenheit
+## Convert Celsius to Fahrenheit
+celsius = [0,10,20.1,34.5]
+
+fahrenheit = [((9/5)*temp + 32) for temp in celsius ]
+
+fahrenheit
+
+
+lst = [ x**2 for x in [x**2 for x in range(11)]]
+lst
+#[0, 1, 16, 81, 256, 625, 1296, 2401, 4096, 6561, 10000]
+
+#______________________
+
+
 # define a for loop inside a list
 x = [x%5 for x in range(5)] 
 print(x) #[0, 1, 2, 3, 4]
